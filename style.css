@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+#nav-ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
+}
+nav a {
+  text-decoration: none;
+  margin-right: 18px;
+  color: #000;
+}
+nav img {
+  border-radius: 50%;
+}
+.text:hover {
+  text-decoration: underline;
+}
+/* google header */
+header {
+  text-align: center;
+}
+.container {
+  margin: 110px;
+}
+#logo {
+  margin: 15px;
+}
+input {
+  width: 80%;
+  height: 2.9em;
+  border-radius: 40px;
+  box-sizing: border-box;
+  border: 1px solid;
+  margin-left: 10px;
+  /*box-shadow: 1px 1px 12px gray;*/
+}
