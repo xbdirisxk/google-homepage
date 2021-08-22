@@ -54,8 +54,9 @@ input[type="text"] {
   margin-left: 10px;
   padding-left: 45px;
   outline: none;
-  background: url(images/search_black_24dp.svg) no-repeat;
-  background-position: left 12px center;
+  background: url(images/search_black_24dp.svg) no-repeat left 12px center,
+    url(images/Google_mic.svg.png) no-repeat right 15px center;
+  background-size: 16px 20px;
 }
 
 input[type="text"]:focus {
