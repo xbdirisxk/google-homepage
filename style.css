@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: hsl(0, 0%, 73%);
 }
 
 /* navbar */
@@ -10,11 +11,13 @@ body {
   align-items: center;
   list-style-type: none;
   overflow: hidden;
+  height: 3em;
 }
 nav a {
   text-decoration: none;
   margin-right: 18px;
-  color: #000;
+  color: rgb(44, 44, 44);
+  font-size: 0.9em;
 }
 nav img {
   border-radius: 50%;
@@ -22,22 +25,116 @@ nav img {
 .text:hover {
   text-decoration: underline;
 }
+.icons {
+  padding: 3px;
+}
+.icons:hover {
+  background-color: hsl(0, 6%, 93%);
+  padding: 3px;
+  border-radius: 50%;
+}
 /* google header */
 header {
   text-align: center;
+  /*color: hsl(0, 0%, 35%);*/
 }
 .container {
   margin: 110px;
+  margin-top: 20px;
 }
 #logo {
   margin: 15px;
 }
-input {
-  width: 80%;
-  height: 2.9em;
-  border-radius: 40px;
+input[type="text"] {
+  width: 55%;
+  height: 3.2em;
+  border-radius: 4em;
   box-sizing: border-box;
-  border: 1px solid;
+  border: 1px solid hsl(0, 0%, 79%);
   margin-left: 10px;
-  /*box-shadow: 1px 1px 12px gray;*/
+  padding-left: 45px;
+  outline: none;
+  background: url(images/search_black_24dp.svg) no-repeat;
+  background-position: left 12px center;
+}
+
+input[type="text"]:focus {
+  box-shadow: 1px 1px 15px hsl(0, 0%, 83%);
+}
+input[type="text"]:hover {
+  box-shadow: 1px 1px 15px hsl(0, 0%, 83%);
+}
+.buttons {
+  margin: 20px;
+}
+.btn {
+  height: 33px;
+  margin: 3px;
+  padding: 10px;
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 98%);
+  cursor: pointer;
+}
+.btn:hover {
+  border: 2px solid hsl(0, 0%, 94%);
+}
+.languege {
+  font-size: 0.9em;
+  color: hsl(0, 0%, 17%);
+}
+.languege a {
+  padding-left: 5px;
+  text-decoration: none;
+}
+.languege a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 950px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+/* footer */
+footer {
+  position: absolute;
+  background-color: hsl(0, 0%, 95%);
+  width: 100%;
+  color: hsl(0, 0%, 35%);
+  bottom: 0;
+}
+.country {
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+.country p {
+  padding-left: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(0, 0%, 43%);
+}
+.f-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+}
+
+.left-flex {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.right-flex {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.left,
+.right {
+  padding: 14px;
+}
+
+.right:hover,
+.left:hover {
+  text-decoration: underline;
 }

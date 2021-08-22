@@ -6,6 +6,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link rel="icon" type="image/svg" href="images/google-brands.svg" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,18 +15,19 @@
   <body>
     <nav>
       <ul id="nav-ul">
-        <li><a href="#" class="text">gmail</a></li>
-        <li><a href="#" class="text">images</a></li>
+        <li><a href="#" class="text">Gmail</a></li>
+        <li><a href="#" class="text">Images</a></li>
         <li>
-          <a href="#"><span class="material-icons">apps</span></a>
+          <a href="#"><span class="material-icons icons">apps</span></a>
         </li>
         <li>
           <a href="#"
             ><img
               src="images/profile.jpg"
-              width="32px"
+              width="32"
               height="32"
               alt="profile pic account"
+              class="icons"
           /></a>
         </li>
       </ul>
@@ -38,14 +40,39 @@
           id="logo"
         />
         <form action="">
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search Google or type URL"
-          />
+          <div class="search-box">
+            <input type="text" name="search" id="google-search" />
+          </div>
+          <div class="buttons">
+            <input type="submit" value="Google Search" class="btn" />
+            <input type="submit" value="I'm Feeling Lucky" class="btn" />
+          </div>
         </form>
+        <div class="languege">
+          <p>
+            google offered in: <a href="arabic languege">العربية</a>
+            <a href="somali languege">Soomaali</a>
+          </p>
+        </div>
       </div>
     </header>
+
+    <footer>
+      <div class="country"><p>Somalia</p></div>
+
+      <div class="f-container">
+        <div class="left-flex">
+          <a href="#about" class="left">About</a>
+          <a href="#advertising" class="left">Advertising</a>
+          <a href="#business" class="left">Business</a>
+          <a href="#how-search-works" class="left">How Search Works</a>
+        </div>
+        <div class="right-flex">
+          <a href="#privacy" class="right">Privacy</a>
+          <a href="#terms" class="right">Terms</a>
+          <a href="#settings" class="right">Settings</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
